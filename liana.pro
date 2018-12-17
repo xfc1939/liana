@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         src/main.cpp \
-        src/mainwindow.cpp
+        src/widgets/mainwindow.cpp \
+        src/redis_client/RedisClient.cpp
 
 HEADERS += \
-        src/mainwindow.h
+        src/widgets/mainwindow.h \
+        src/redis_client/RedisClient.h
 
 FORMS += \
         ui/mainwindow.ui
