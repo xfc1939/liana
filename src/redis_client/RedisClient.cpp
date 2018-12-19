@@ -19,11 +19,11 @@ RedisClient::RedisClient(const QString &address) {
             return ;
         }
 
-        is_connected = connect();
+        is_connected = connectToRedisServer();
     }
 }
 
-bool RedisClient::connect() {
+bool RedisClient::connectToRedisServer() {
     socket_.connectToHost(ip_address_, port_, QTcpSocket::ReadWrite);
     auto connected = socket_.waitForConnected(3000);
 

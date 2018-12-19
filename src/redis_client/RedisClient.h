@@ -18,7 +18,7 @@ public slots:
     void onReadyRead();
 
 private:
-    bool connect();
+    bool connectToRedisServer();
 
 private:
     QString ip_address_;
